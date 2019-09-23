@@ -5,6 +5,13 @@
   font-display: swap;
   src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -134,7 +141,7 @@ table {
   border-spacing: 0;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .nav-container {
   width: 100%;
@@ -174,6 +181,7 @@ nav a {
   flex-direction: column;
 }
 .index-header .center-container .content h1 {
+  font-family: 'Roboto', sans-serif;
   color: white;
   font-weight: 500;
   letter-spacing: 2px;
@@ -185,4 +193,16 @@ nav a {
   font-size: 18px;
   margin-bottom: 8px;
   font-style: italic;
+}
+.index-header .center-container .content button {
+  background-color: #1AAE9F;
+  color: white;
+  font-size: 20px;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  height: 48px;
+  width: 100%;
+  border-radius: 7px;
 }
