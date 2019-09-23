@@ -1,3 +1,45 @@
 .index-header {
-    .background-header(url("/images/banner1_optimized.jpg"),70vh, 100%);
+    .background-header(url("/images/banner1_optimized.jpg"),80vh, 100%);
+
+    .center-container{
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .content{
+            display: flex;
+            
+            flex-direction: column;
+            h1{
+                font-family: 'Roboto', sans-serif;
+                color: @title-color;
+                font-weight: 500;
+                letter-spacing: 2px;
+                font-size: 50px;
+                margin-bottom: 15px;
+                
+            }
+            span {
+                color: @subtitle-color;
+                font-size: 23px;
+                margin-bottom: 8px;
+                font-style: italic;
+            }
+            button{
+                background-color: @button-color;
+                color: white;
+                font-size: 20px;
+                font-family: inherit;
+                border: none;
+                cursor: pointer;
+                outline: none;
+                height: 48px;
+                width: 90%;
+                border-radius: 7px;
+                margin-top: 18px;
+            }
+        }
+
+    }
 }
