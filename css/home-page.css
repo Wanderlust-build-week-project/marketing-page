@@ -135,4 +135,6 @@ nav a {
   background-image: url("/images/banner1_optimized.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-color: red;
 }
