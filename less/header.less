@@ -1,4 +1,31 @@
 .index-header {
-    .background-header(url("/images/banner1_optimized.jpg"),70vh, 100%);
-    background-color: red;
+    .background-header(url("/images/banner1_optimized.jpg"),80vh, 100%);
+
+    .center-container{
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .content{
+            display: flex;
+            flex-direction: column;
+            
+            h1{
+                color: @title-color;
+                font-weight: 500;
+                letter-spacing: 2px;
+                font-size: 50px;
+                margin-bottom: 8px;
+                
+            }
+            span {
+                color: @subtitle-color;
+                font-size: 20px;
+                margin-bottom: 8px;
+                font-style: italic;
+            }
+        }
+
+    }
 }
