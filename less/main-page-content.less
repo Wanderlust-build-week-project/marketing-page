@@ -1,11 +1,16 @@
 .middle-container{
-    width: 94%;
-    min-width: 900px;
+    width: 96%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     font-size: 20px;
     
+    @media @tablet {
+            flex-direction: column;
+            min-width: unset;
+            align-items: center;
+    }
+
     .box {
         color: @font-color;
         display: flex;;
@@ -20,7 +25,16 @@
         border: @gray-border;
         width: 47%;
 
-        height: 450px;
+        min-height: 450px;
+        height: auto;
+
+        @media @tablet {
+            height: auto;
+            width: 96%;
+            margin-bottom: 10px;
+            margin-right: 5px;
+        }
+
         h2{
             font-size: 32px;
             margin-bottom: 20px;
@@ -32,8 +46,19 @@
             border: @gray-border;
             margin-left: 6px;
             margin-right: 6px;
-            align-items: center;
             margin-bottom: 35px;
+
+            padding-top: 15px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            @media (max-width: 1000px){
+                padding-top: 15px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
 
             .icon{
                 margin-left: 10px;
@@ -48,6 +73,7 @@
             .review-text-container{
                 margin-left: 35px;
                 margin-right: 10px;
+                
             }
 
 
@@ -55,6 +81,7 @@
                 font-size: 22px;
                 margin-bottom: 10px;
                 margin-top: 10px;
+                text-align: center;
             }
             .review-description{
                 font-style: italic;
@@ -84,7 +111,7 @@
     margin-top: 20px;
     border: @gray-border;
     min-width: 900px;
-    width: 94%;
+    width: 96%;
     flex-direction: column;
     align-items: center;
     height: 350px;
@@ -96,7 +123,13 @@
     }
     p{
         font-size: 18px;
+        margin-bottom: 25px;
         width: 83%;
         line-height: 2;
+    }
+
+    @media @tablet {
+        min-width: unset;
+        height: auto;
     }
 }
