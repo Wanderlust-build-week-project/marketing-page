@@ -314,7 +314,6 @@ footer .footer-container .company-name {
   justify-items: center;
   align-items: center;
   margin-bottom: 30px;
-  line-height: 1.5;
   margin-top: 30px;
   height: 90%;
   width: 80%;
@@ -336,6 +335,9 @@ footer .footer-container .company-name {
   font-weight: 200px;
   font-style: bold;
   padding-bottom: 20px;
+}
+.aboutUs2 p {
+  line-height: 1.5;
 }
 .aboutUs3 {
   color: #353e44;
