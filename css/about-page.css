@@ -255,11 +255,9 @@ nav a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-@media (max-width: 768px) {
-  .about-header {
-    display: flex;
-  }
+  /* @media @tablet {
+        display: flex;
+    }*/
 }
 .title {
   height: 90%;
@@ -267,16 +265,20 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  padding-top: 20px;
+  /* @media @tablet {
+       justify-content: center;
+       align-items: center;
+       
+       
+   }*/
 }
 .title h1 {
-  color: black;
-  font-size: 40px;
-}
-@media (max-width: 768px) {
-  .title {
-    flex-direction: column-reverse;
-    justify-content: center;
-  }
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 50px;
 }
 footer {
   display: flex;
@@ -300,6 +302,7 @@ footer .footer-container .company-name {
   margin-right: 25px;
 }
 .aboutUs2 {
+  color: #353e44;
   display: flex;
   margin: 0 auto;
   min-width: 900px;
@@ -328,6 +331,7 @@ footer .footer-container .company-name {
   padding-bottom: 1%;
 }
 .aboutUs3 {
+  color: #353e44;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -359,7 +363,7 @@ footer .footer-container .company-name {
   padding-bottom: 40px;
 }
 .aboutUs3 .person a {
-  color: black;
+  color: #353e44;
 }
 @media (max-width: 600px) {
   .aboutUs3 .person {
