@@ -256,6 +256,11 @@ nav a {
   background-size: cover;
   background-position: center;
 }
+@media (max-width: 768px) {
+  .about-header {
+    display: flex;
+  }
+}
 .title {
   height: 90%;
   width: 100%;
@@ -266,6 +271,12 @@ nav a {
 .title h1 {
   color: black;
   font-size: 40px;
+}
+@media (max-width: 768px) {
+  .title {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
 }
 footer {
   display: flex;
@@ -299,6 +310,18 @@ footer .footer-container .company-name {
   margin-top: 30px;
   height: 90%;
   width: 80%;
+}
+@media (max-width: 768px) {
+  .aboutUs2 {
+    flex-direction: column;
+    min-width: unset;
+    align-tiems: center;
+  }
+}
+@media (max-width: 600px) {
+  .aboutUs2 {
+    align-items: center;
+  }
 }
 .aboutUs2 h2 {
   font-size: 30px;
@@ -337,4 +360,17 @@ footer .footer-container .company-name {
 }
 .aboutUs3 .person a {
   color: black;
+}
+@media (max-width: 600px) {
+  .aboutUs3 .person {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .aboutUs3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 }

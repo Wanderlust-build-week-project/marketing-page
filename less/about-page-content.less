@@ -12,14 +12,26 @@
     margin-top: 30px;
     height: 90%;
     width: 80%;
+
+    @media @tablet {
+        flex-direction: column;
+        min-width: unset;
+        align-tiems: center;
+
+    }// this closes tablet media querie
+
+    @media @mobile {
+        align-items: center;
+        
+    }
     
      
     h2 {
         font-size: 30px;
         padding-bottom: 1%;
-    }
-
-}
+    }// this closes h2
+ 
+}// this closes aboutUs2
 
 .aboutUs3 {
     
@@ -45,21 +57,36 @@
             border-radius: 100px;
             
             
-        }
+        }// this closes personPic
+
         h3 {
          font-size: 20px;
          font-style: bold;
          padding-top: 25px;
          padding-bottom: 40px;
-        }
+        } // this closes h3
+
         p {
           font-style: italic;
           padding-bottom: 40px;
-        }
+        } // this closes p
+
         a {
             color: black;
+        }// this closes a
+
+        @media @mobile {
+            width: 80%;
         }
-        
+
+    }// this closes person box
+
+    @media @mobile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
-}
+
+}// this closes aboutUs3 box
 
