@@ -57,9 +57,9 @@
 .about-header {
     .background-header(url("../images/banner3_optimized.jpg"),40vh, 100%);
    
-    @media @tablet {
+   /* @media @tablet {
         display: flex;
-    }
+    }*/
 }
 
 .title {
@@ -69,18 +69,22 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    padding-top: 20px;
     
     h1 {
-        color: black;
-        font-size: 40px;
+        font-family: 'Roboto', sans-serif;
+        color: @title-color;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 50px;
     }
 
-   @media @tablet {
-       flex-direction: column-reverse;
+  /* @media @tablet {
        justify-content: center;
+       align-items: center;
        
        
-   }
+   }*/
 
 }/// closes title
 
