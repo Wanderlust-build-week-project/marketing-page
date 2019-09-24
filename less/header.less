@@ -1,6 +1,7 @@
 .index-header {
-    .background-header(url("/images/banner1_optimized.jpg"),80vh, 100%);
-    
+    .background-header(url("/images/banner1_optimized.jpg"),58vh, 100%);
+    min-height: 600px;
+    margin-bottom: 40px;
     .center-container{
         height: 90%;
         display: flex;
@@ -26,11 +27,15 @@
                 margin-bottom: 8px;
                 font-style: italic;
             }
-            button{
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 background-color: @button-color;
                 color: white;
                 font-size: 20px;
                 font-family: inherit;
+                text-decoration: none;
                 border: none;
                 cursor: pointer;
                 outline: none;
