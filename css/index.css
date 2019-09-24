@@ -197,6 +197,27 @@ nav a {
 .underline-from-left:hover:before {
   right: 0;
 }
+footer {
+  display: flex;
+  justify-content: center;
+}
+footer .footer-container {
+  font-size: 18px;
+  color: #353e44;
+  width: 67%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid rgba(204, 203, 203, 0.712);
+  margin-top: 30px;
+}
+footer .footer-container .copyright {
+  margin-right: 25px;
+}
+footer .footer-container .company-name {
+  margin-right: 25px;
+}
 .middle-container {
   width: 96%;
   margin: 0 auto;
@@ -383,25 +404,4 @@ nav a {
 .title h1 {
   color: black;
   font-size: 40px;
-}
-footer {
-  display: flex;
-  justify-content: center;
-}
-footer .footer-container {
-  font-size: 18px;
-  color: #353e44;
-  width: 67%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 3px solid rgba(204, 203, 203, 0.712);
-  margin-top: 30px;
-}
-footer .footer-container .copyright {
-  margin-right: 25px;
-}
-footer .footer-container .company-name {
-  margin-right: 25px;
 }
