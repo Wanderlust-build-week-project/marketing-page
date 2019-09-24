@@ -197,12 +197,34 @@ nav a {
 .underline-from-left:hover:before {
   right: 0;
 }
+footer {
+  display: flex;
+  justify-content: center;
+}
+footer .footer-container {
+  font-size: 18px;
+  color: #353e44;
+  width: 67%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid rgba(204, 203, 203, 0.712);
+  margin-top: 30px;
+}
+footer .footer-container .copyright {
+  margin-right: 25px;
+}
+footer .footer-container .company-name {
+  margin-right: 25px;
+}
 .middle-container {
   width: 96%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   font-size: 20px;
+  max-width: 1500px;
 }
 @media (max-width: 768px) {
   .middle-container {
@@ -300,8 +322,14 @@ nav a {
   border: 3px solid rgba(204, 203, 203, 0.712);
   width: 96%;
   flex-direction: column;
+  max-width: 1500px;
   align-items: center;
   height: auto;
+}
+@media (max-width: 768px) {
+  .bottom-content {
+    width: 94%;
+  }
 }
 .bottom-content h2 {
   font-size: 32px;
@@ -317,7 +345,7 @@ nav a {
 .index-header {
   width: 100%;
   height: 58vh;
-  background-image: url("/images/banner1_optimized.jpg");
+  background-image: url("../images/banner1_optimized.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -364,14 +392,21 @@ nav a {
   width: 90%;
   border-radius: 7px;
   margin-top: 18px;
+  transition: background-color 0.35s ease;
+}
+.index-header .center-container .content a:hover {
+  background-color: #59b34d;
 }
 .about-header {
   width: 100%;
   height: 40vh;
-  background-image: url("/images/banner3_optimized.jpg");
+  background-image: url("../images/banner3_optimized.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /* @media @tablet {
+        display: flex;
+    }*/
 }
 .title {
   height: 90%;
@@ -379,29 +414,18 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  padding-top: 20px;
+  /* @media @tablet {
+       justify-content: center;
+       align-items: center;
+       
+       
+   }*/
 }
 .title h1 {
-  color: black;
-  font-size: 40px;
-}
-footer {
-  display: flex;
-  justify-content: center;
-}
-footer .footer-container {
-  font-size: 18px;
-  color: #353e44;
-  width: 67%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 3px solid rgba(204, 203, 203, 0.712);
-  margin-top: 30px;
-}
-footer .footer-container .copyright {
-  margin-right: 25px;
-}
-footer .footer-container .company-name {
-  margin-right: 25px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 50px;
 }

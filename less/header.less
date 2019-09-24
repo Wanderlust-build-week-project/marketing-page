@@ -1,5 +1,5 @@
 .index-header {
-    .background-header(url("/images/banner1_optimized.jpg"),58vh, 100%);
+    .background-header(url("../images/banner1_optimized.jpg"),58vh, 100%);
     min-height: 600px;
     margin-bottom: 40px;
     .center-container{
@@ -43,6 +43,11 @@
                 width: 90%;
                 border-radius: 7px;
                 margin-top: 18px;
+                transition: background-color 0.35s ease;
+
+                &:hover{
+                    background-color: @button-hover-color;
+                }
             }
         }
 
@@ -50,8 +55,7 @@
 }
 
 .about-header {
-    .background-header(url("/images/banner3_optimized.jpg"),40vh, 100%);
-   
+    .background-header(url("../images/banner3_optimized.jpg"),40vh, 100%);
    /* @media @tablet {
         display: flex;
     }*/
