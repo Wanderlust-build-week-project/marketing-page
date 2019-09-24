@@ -287,6 +287,11 @@ nav a {
   margin-top: 35px;
   width: 90%;
 }
+@media (max-width: 768px) {
+  .middle-container .adventure-container {
+    margin-left: 0px;
+  }
+}
 .bottom-content {
   color: #353e44;
   display: flex;
@@ -359,6 +364,25 @@ nav a {
   width: 90%;
   border-radius: 7px;
   margin-top: 18px;
+}
+.about-header {
+  width: 100%;
+  height: 40vh;
+  background-image: url("/images/banner3_optimized.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.title {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.title h1 {
+  color: black;
+  font-size: 40px;
 }
 footer {
   display: flex;
