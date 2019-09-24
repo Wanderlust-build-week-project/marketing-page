@@ -224,6 +224,7 @@ footer .footer-container .company-name {
   display: flex;
   justify-content: space-between;
   font-size: 20px;
+  max-width: 1500px;
 }
 @media (max-width: 768px) {
   .middle-container {
@@ -321,8 +322,14 @@ footer .footer-container .company-name {
   border: 3px solid rgba(204, 203, 203, 0.712);
   width: 96%;
   flex-direction: column;
+  max-width: 1500px;
   align-items: center;
   height: auto;
+}
+@media (max-width: 768px) {
+  .bottom-content {
+    width: 94%;
+  }
 }
 .bottom-content h2 {
   font-size: 32px;
@@ -385,6 +392,10 @@ footer .footer-container .company-name {
   width: 90%;
   border-radius: 7px;
   margin-top: 18px;
+  transition: background-color 0.35s ease;
+}
+.index-header .center-container .content a:hover {
+  background-color: #59b34d;
 }
 .about-header {
   width: 100%;

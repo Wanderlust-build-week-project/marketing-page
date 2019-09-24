@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 20px;
-    
+    max-width: 1500px;
     @media @tablet {
             flex-direction: column;
             min-width: unset;
@@ -115,8 +115,13 @@
     border: @gray-border;
     width: 96%;
     flex-direction: column;
+    max-width: 1500px;
+
     align-items: center;
     height: auto;
+    @media @tablet{
+        width: 94%;
+    }
 
     h2{
         font-size: 32px;
