@@ -193,17 +193,18 @@ nav a {
   margin-left: 6px;
   margin-right: 6px;
   align-items: center;
-  justify-content: center;
+  margin-bottom: 25px;
 }
 .middle-container .box .review-box .icon {
   margin-left: 10px;
+  margin-right: 10px;
 }
 .middle-container .box .review-box .rating {
   display: flex;
   margin-left: 8px;
 }
 .middle-container .box .review-box .review-text-container {
-  margin-left: 25px;
+  margin-left: 35px;
 }
 .middle-container .box .review-box h3 {
   font-size: 22px;
@@ -213,7 +214,7 @@ nav a {
 .middle-container .box .review-box .review-description {
   font-style: italic;
   font-size: 18px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .middle-container .adventure-container {
   line-height: 2;
