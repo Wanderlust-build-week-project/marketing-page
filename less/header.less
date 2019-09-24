@@ -51,6 +51,10 @@
 
 .about-header {
     .background-header(url("/images/banner3_optimized.jpg"),40vh, 100%);
+   
+    @media @tablet {
+        display: flex;
+    }
 }
 
 .title {
@@ -65,5 +69,13 @@
         color: black;
         font-size: 40px;
     }
-}
+
+   @media @tablet {
+       flex-direction: column-reverse;
+       justify-content: center;
+       
+       
+   }
+
+}/// closes title
 
