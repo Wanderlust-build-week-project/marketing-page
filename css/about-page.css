@@ -374,6 +374,10 @@ footer .footer-container .company-name {
 .aboutUs3 .person a {
   color: #353e44;
 }
+.aboutUs3 .person a :hover {
+  color: #1AAE9F;
+  transform: scale(1.6);
+}
 @media (max-width: 600px) {
   .aboutUs3 .person {
     width: 80%;
